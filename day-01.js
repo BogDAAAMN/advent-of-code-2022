@@ -1,5 +1,5 @@
 const fs = require("fs");
-const input = fs.readFileSync("input/one.txt", "utf8");
+const input = fs.readFileSync("input/day-01.txt", "utf8");
 
 // Split numbers into groups split by empty lines
 const groups = input
