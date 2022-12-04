@@ -32,8 +32,8 @@ const overlappingRangesCounter = lines.reduce((acc, line) => {
   // Split line into two the two ranges
   const ranges = line.split(",");
 
-  const firstElf = ranges[0].split("-").map((v) => parseInt(v));
-  const secondElf = ranges[1].split("-").map((v) => parseInt(v));
+  const firstElf = ranges[0].split("-").map((n) => parseInt(n));
+  const secondElf = ranges[1].split("-").map((n) => parseInt(n));
 
   // Check if the first range overlaps the second range
   if (secondElf[0] <= firstElf[1] && secondElf[1] >= firstElf[1]) {
